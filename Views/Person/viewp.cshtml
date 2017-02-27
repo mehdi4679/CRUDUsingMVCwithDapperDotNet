@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+     <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/js/app.js"></script>
+    <script src="~/js/Services/personService.js"></script>
+
+    <script src="~/js/controller/Persoanlctl.js"></script>
+
+</head>
+<body>
+    <div name="dmain" ng-app="myapp" ng-controller="Personalctl as s">
+
+        sdfvredsgedr
+
+        {{name}}
+
+        {{s}}
+        ssss
+
+        <div id="dcontainer" class="main">
+            <div ng-repeat="p in s.plist">
+                {{$index}}<br />
+                {{p.FName+ ' '+p.LName+' فرزند: '+p.FatherName}}
+                <br />
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+            </div>
+        </div> 
+
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
